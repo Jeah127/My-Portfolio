@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeah Lacra | Modern Vintage Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#" class="brand-logo">
+                <div class="logo-circle">JL</div>
+                <span class="logo-text">Jeah Lacra</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Works</a></li>
+                <li><a href="#experience" class="nav-link">Timeline</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button onclick="openDossier()" class="dossier-btn"><i class="fa-solid fa-address-card"></i> Passport</button></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn mobile-only">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Navigation -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#about" class="mobile-link" onclick="closeMobileMenu()">About</a>
+            <a href="#education" class="mobile-link" onclick="closeMobileMenu()">Education</a>
+            <a href="#projects" class="mobile-link" onclick="closeMobileMenu()">Works</a>
+            <a href="#experience" class="mobile-link" onclick="closeMobileMenu()">Timeline</a>
+            <a href="#interests" class="mobile-link" onclick="closeMobileMenu()">Interests</a>
+            <a href="#contact" class="mobile-link" onclick="closeMobileMenu()">Contact</a>
+            <button onclick="openDossier(); closeMobileMenu();" class="dossier-btn-mobile"><i class="fa-solid fa-address-card"></i> View Passport</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span> My Portfolio
+                </div>
+
+                <h1 class="hero-heading">
+                    Journey of my <span class="italic-rose">Analyst</span> career path experience.
+                </h1>
+
+                <p class="hero-bio">
+                    Hello, Visitors. I'm <strong>Jeah Lacra</strong>—a Data Analyst & a Project Manager.
+                </p>
+
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <!-- Curriculum Vitae (CV) Download Link -->
+                    <a href="assets/Jeah_Lacra_CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                </div>
+
+                <div class="social-links">
+                <a href="https://github.com/Jeah127" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-github"></i></a>
+                    
+                <a href="https://www.linkedin.com/in/jeah-lacra-1533843b9/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Portrait Frame -->
+            <div class="hero-visual">
+                <div class="portrait-card" id="portrait-card">
+                    <div class="stamp-corner">★</div>
+                    <div class="portrait-image-wrapper">
+                        <img src="assets/Jeah Lacra.png" alt="Jeah Lacra" class="portrait-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="portrait-footer">
+                        <div>
+                            <p class="caption-sub">Jeah Lacra, 2026</p>
+                        </div>
+                        <span class="signature">j.l.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / MY SKILLS SECTION -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-script">About Me</span>
+                <h2 class="section-title">Curiosity, Code & Art</h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">03+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8 below</span>
+                    <span class="stat-label">Hours of Sleep</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Detail Oriented</span>
+                </div>
+            </div>
+
+            <div class="about-content-grid">
+                <div class="narrative-card">
+                    <h3>The Narrative</h3>
+                    <p>I specialize in understanding data i enjoy answering questions by providing visualization for non-technical people it makes me happy cleaning and organizing messy data.And most of all as how much i love arts i also do love creating a beautiful UI/UX designs and vibe coding system and apps.</p>
+                </div>
+
+                <!-- My Skills -->
+                <div class="skills-card">
+                    <h3>My Skills</h3>
+                    <div class="skills-flex">
+                        <span class="skill-badge">Data Analytics & SQL</span>
+                        <span class="skill-badge">Python Development</span>
+                        <span class="skill-badge">Frontend Engineering</span>
+                        <span class="skill-badge">UI/UX Design</span>
+                        <span class="skill-badge">Q/A Tester</span>
+                        <span class="skill-badge">Database Management</span>
+                        <span class="skill-badge">Project Manager</span>
+                        <span class="skill-badge">Interactive Systems</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <span class="section-script">Academic Background</span>
+                <h2 class="section-title">Where I Study</h2>
+            </div>
+
+            <div class="narrative-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+                
+                <!-- 1. Higher Education -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 1.5rem;">
+                    <div>
+                        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-dusky); font-weight: 600; letter-spacing: 0.5px;">Higher Education</span>
+                        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 0.25rem;">Bachelor of Science in Computer Science</h3>
+                        <p style="color: var(--text-sepia); font-size: 0.95rem; margin-top: 0.2rem;"><strong>Sorsogon State University - Bulan Campus</strong></p>
+                    </div>
+                    <span class="skill-badge" style="background: var(--surface-paper); border: 1px solid var(--border-color);">2023 — Present</span>
+                </div>
+
+                <!-- 2. Secondary Education -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 1.5rem;">
+                    <div>
+                        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-dusky); font-weight: 600; letter-spacing: 0.5px;">Secondary Education</span>
+                        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 0.25rem;">Computer System Servicing (CSS)</h3>
+                        <p style="color: var(--text-sepia); font-size: 0.95rem; margin-top: 0.2rem;"><strong>Sta. Magdalena National High School</strong></p>
+                        <p style="color: var(--accent-dusky); font-size: 0.85rem; font-weight: 600; margin-top: 0.25rem;">★ With Higher Honor</p>
+                    </div>
+                    <span class="skill-badge" style="background: var(--surface-paper); border: 1px solid var(--border-color);">2017 — 2023</span>
+                </div>
+
+                <!-- 3. Elementary Education -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-dusky); font-weight: 600; letter-spacing: 0.5px;">Elementary Education</span>
+                        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 0.25rem;">San Antonio Elementary School</h3>
+                        <p style="color: var(--accent-dusky); font-size: 0.85rem; font-weight: 600; margin-top: 0.25rem;">★ Salutatorian</p>
+                    </div>
+                    <span class="skill-badge" style="background: var(--surface-paper); border: 1px solid var(--border-color);">2011 — 2017</span>
+                </div>
+
+                <p style="margin-top: 0.5rem; color: var(--text-sepia); font-size: 0.9rem; border-top: 1px solid var(--border-color); padding-top: 1rem; font-style: normal;">
+                    Focused on software architecture, database management, web applications development, and quantitative data analysis.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS & WEBSITES CREATED -->
+<section id="projects" class="section">
+    <div class="section-header">
+        <span class="section-script">Curated Works</span>
+        <h2 class="section-title">Projects & Websites Created</h2>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Applications</button>
+        <button class="filter-btn" data-filter="certificate">Certificate</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="project-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card" data-category="mobile">
+            <div class="project-image-box">
+                <img src="assets/front.jpeg">
+            </div>
+            <div class="project-body">
+                <div class="project-meta">
+                    <span>Mobile Application</span>
+                    <span>2025</span>
+                </div>
+                <h3>School Bud</h3>
+                <p>A mobile application built for student to journal there college life, achievement, Take down notes, input their class schedule, and a task note for pending activities.</p>
+                <button class="project-btn open-gallery-btn" 
+                        data-title="School Bud Mobile App" 
+                        data-desc="Designed and developed a Campus gram Mobile app for students to help them easily journal their campus moments"
+                        data-images="assets/Started.jpeg, assets/Campus.jpeg, assets/create.jpeg, assets/study.jpeg, assets/journal.jpeg, assets/schedule.jpeg, assets/reviewer.jpeg, assets/ai.jpeg, assets/profile.jpeg,assets/School Bud.jpeg">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="certificate">
+            <div class="project-image-box">
+                <img src="assets/sucess.jpeg" alt="Data Intelligence Dashboard">
+            </div>
+            <div class="project-body">
+                <div class="project-meta">
+                    <span>Certificates</span>
+                    <span>2023-2026</span>
+                </div>
+                <h3>My Certificates</h3>
+                <p>Certificates i had receive for participating online classes and for joining hackathon in our school campus.</p>
+                <button class="project-btn open-gallery-btn" 
+                        data-title="Certificate" 
+                        data-desc="Certificates i had receive for participating online classes and for joining hackathon in our school campus."
+                        data-images="assets/C1.jpg, assets/C2.jpg, assets/C3.jpg, assets/C4.png, assets/C5.png,assets/C6.jpeg">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="design">
+            <div class="project-image-box">
+                <img src="\assets\main.png">
+            </div>
+            <div class="project-body">
+                <div class="project-meta">
+                    <span>Design / Online Shop</span>
+                    <span>2024</span>
+                </div>
+                <h3>Arngren</h3>
+                <p>An online shop for different types of vehicle.</p>
+                <button class="project-btn open-gallery-btn" 
+                        data-title="Arngren Website" 
+                        data-desc="A luxury quarterly layout designed for online shop. Features different type of vehicles ."
+                        data-images="assets/main.png, assets/signup.png, assets/feature.png, assets/description.png,assets/cart.png,assets/checkout.png">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- CASE STUDY MODAL (WITH CAROUSEL) -->
+<div id="case-modal" class="modal-backdrop hidden">
+    <div class="case-card">
+        <button onclick="closeModal()" class="close-btn">&times;</button>
+        
+        <!-- Image Gallery Carousel Container -->
+        <div class="carousel-container">
+            <button class="carousel-nav prev-btn" id="prev-btn">&#10094;</button>
+            <img id="modal-img" src="" alt="Project Image" class="modal-img">
+            <button class="carousel-nav next-btn" id="next-btn">&#10095;</button>
+        </div>
+        <div id="carousel-dots" class="carousel-dots"></div>
+
+        <h3 id="modal-title">Project Title</h3>
+        <p id="modal-desc">Project details appear here.</p>
+    </div>
+</div>
+
+        <!-- TIMELINE SECTION -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-script">The Voyage</span>
+                <h2 class="section-title">Experience & Milestones</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge">'26</div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 -Present</span>
+                        <h4>Data Analyst & Programmer</h4>
+                        <p class="company">Thesis</p>
+                        <p class="description">A full stack developer of our proposed system "Barangay-Level Flood Forecasting and Emergency Response System with Household Risk Prioritization and GIS Mapping" with machine Learning.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge">'25</div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025-2026</span>
+                        <h4>Full Stack Developer and A project Manager</h4>
+                        <p class="company">2 projects</p>
+                        <p class="description">A full stack developer of School Bud, And a project manager of KampusKart an online shop campus-based website for Entrepreneur Student .</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge">'24</div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h4>Data Analyst</h4>
+                        <p class="company">Covid-19 raw files</p>
+                        <p class="description">Clean a messy data and turns it into well prepared data for interpretation using SQL.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THINGS I LIKED / PERSONAL INTERESTS -->
+        <section id="interests" class="section">
+            <div class="section-header">
+                <span class="section-script">Personal Favs</span>
+                <h2 class="section-title">Things I Liked</h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card" style="border-style: solid; border-color: var(--border-color); text-align: left;">
+                    <i class="fa-solid fa-mug-hot" style="color: var(--accent-dusky); font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    <h4 style="font-family: var(--font-serif); margin-bottom: 0.25rem;">Ice Cream and Nova</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-sepia);">The combination of ice cream and nova are just under rated.</p>
+                </div>
+
+                <div class="stat-card" style="border-style: solid; border-color: var(--border-color); text-align: left;">
+                    <i class="fa-solid fa-compact-disc" style="color: var(--accent-dusky); font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    <h4 style="font-family: var(--font-serif); margin-bottom: 0.25rem;">Crayons and Paint</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-sepia);">Weird Scent of Crayons and paints make my dopamine high.</p>
+                </div>
+
+                <div class="stat-card" style="border-style: solid; border-color: var(--border-color); text-align: left;">
+                    <i class="fa-solid fa-book-open" style="color: var(--accent-dusky); font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    <h4 style="font-family: var(--font-serif); margin-bottom: 0.25rem;">Watching Movies</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-sepia);">I really like horror movies and thriller.</p>
+                </div>
+
+                <div class="stat-card" style="border-style: solid; border-color: var(--border-color); text-align: left;">
+                    <i class="fa-solid fa-code" style="color: var(--accent-dusky); font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    <h4 style="font-family: var(--font-serif); margin-bottom: 0.25rem;">Reading Books</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-sepia);">I love reading books except romance unless it is a romcom!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE POSTCARD STUDIO -->
+        <section id="studio" class="section">
+            <div class="section-header">
+                <span class="section-script">What do you think of me!<span>
+                <h2 class="section-title">Personalized Postcard Creator</h2>
+            </div>
+
+            <div class="postcard-studio-card">
+                <div class="postcard-preview-wrap">
+                    <div class="postcard-preview" id="postcard-preview">
+                        <div class="postcard-divider"></div>
+                        <div class="postcard-top">
+                            <div>
+                                <p class="card-script" id="preview-heading">Greetings & Warm Wishes</p>
+                                <p class="card-date">2026</p>
+                            </div>
+                            <div class="postcard-stamp">
+                                <i class="fa-solid fa-rose"></i>
+                            </div>
+                        </div>
+
+                        <div class="postcard-middle">
+                            <p class="card-message" id="preview-message">"May your digital endeavors be filled with creativity, beauty, and timeless craft."</p>
+                            <div class="card-address">
+                                <p id="preview-to">To: Dear Visitor</p>
+                                <p>From: Jeah Lacra</p>
+                                <p class="sub-address">Sta.Magdalena,Sorsogon, PH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="postcard-controls">
+                    <h3>Customize Postcard</h3>
+                    <div class="form-group">
+                        <label>Header Title</label>
+                        <input type="text" id="input-heading" value="Greetings & Warm Wishes">
+                    </div>
+                    <div class="form-group">
+                        <label>Recipient Name</label>
+                        <input type="text" id="input-to" value="Dear Visitor">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="input-message" rows="3">May your digital endeavors be filled with creativity, beauty, and timeless craft.</textarea>
+                    </div>
+                    <button id="copy-postcard-btn" class="btn btn-primary full-width">Copy Postcard Note</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-script">Correspondence</span>
+                <h2 class="section-title">Send a Letter</h2>
+            </div>
+
+            <div class="contact-card">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" required placeholder="Last Name,First Name M.I">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" required placeholder="Enter your email address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Inquiry</label>
+                        <textarea rows="5" required placeholder="Write your thoughts here..."></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="button" id="copy-email-btn" class="email-copy-btn">
+                            <i class="fa-regular fa-envelope"></i> jeah@lacra
+                            <span id="copy-status"></span>
+                        </button>
+                        <button type="submit" class="btn btn-primary">Send<i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
+
+                <div id="form-toast" class="form-toast hidden">
+                    <div class="toast-icon"><i class="fa-solid fa-check"></i></div>
+                    <h3>Letter Dispatched!</h3>
+                    <p>Thank you for reaching out. I will reply to your message shortly.</p>
+                    <button onclick="resetForm()" class="btn btn-outline">Send Another</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-script">Jeah Lacra</div>
+        <p>© 2026 Jeah Lacra • Crafted with Warmth, Code & Subtle Rose Accents.</p>
+        <a href="#" class="top-btn">Top <i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- PASSPORT DOSSIER MODAL -->
+    <div id="dossier-modal" class="modal-backdrop hidden">
+        <div class="dossier-card">
+            <div class="modal-header">
+                <div class="modal-title"><span class="badge-dot"></span> Passport & Identity Dossier</div>
+                <button onclick="closeDossier()" class="close-btn">&times;</button>
+            </div>
+
+            <div class="dossier-body">
+                <div class="dossier-sidebar">
+                    <div class="dossier-avatar-wrap">
+                        <img src="assets/Jeah Lacra.png" alt="Jeah Lacra Avatar">
+                    </div>
+                    <h3>Jeah Lacra</h3>
+                    <p class="dossier-role" style="font-size: 0.85rem;">Data Analyst & Programmer</p>
+                </div>
+
+                <div class="dossier-main">
+                    <span class="label"><b>Personal Philosophy</b></span>
+                    <p class="bio-quote">"Blending structured data logic with aesthetic frontend design. Dedicated to creating modern software with a tactile vintage feel."</p>
+
+                    <span class="label">Core Skills</span>
+                    <div class="skills-flex">
+                        <span class="skill-badge">Python & SQL</span>
+                        <span class="skill-badge">Excel</span>
+                        <span class="skill-badge">UI/UX Design</span>
+                        <span class="skill-badge">Data Visualization</span>
+                    </div>
+
+                    <div class="meta-info">
+                        <div>
+                            <span class="label"><b>Education</b></span>
+                            <p>BS Computer Science</p>
+                        </div>
+                        <div>
+                            <span class="label"><b>Location</b></span>
+                            <p>Sta.Magdalena,Sorsogon, PH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASE STUDY MODAL -->
+    <div id="case-modal" class="modal-backdrop hidden">
+        <div class="case-card">
+            <button onclick="closeModal()" class="close-btn">&times;</button>
+            <img id="modal-img" src="" alt="Project Image" class="modal-img">
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-desc">Project details appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
